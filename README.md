@@ -1,10 +1,10 @@
 # DiTree
 
-[project page](https://sites.google.com/view/ditree/home) [paper](https://arxiv.org/abs/2508.21001)
+[project page](https://sites.google.com/view/ditree/home) , [paper](https://arxiv.org/abs/2508.21001)
 
 Official implementation of the paper "Train Once Plan Anywhere Kinodynamic Motion Planning via Diffusion Trees" [CoRL 25]
 
-This repository contains the code and experiment setup for the **DiTree** project. It includes training configuration, experiment execution scripts, and pretrained model checkpoints.
+This repository contains the code and experiment setup for  **Train-Once Plan-Anywhere Kinodynamic Motion Planning via Diffusion Trees** . It includes training configuration, experiment execution scripts, and pretrained model checkpoints.
 
 The associated car dataset and model weights are available for download [here](https://drive.google.com/drive/folders/1WiBU2g1qQn_2j6v1ZTB1eU0dAyCGoX7F?usp=sharing).
 
@@ -86,13 +86,6 @@ checkpoints/
 data/
 ```
 
----
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-If you want, I can also make you a **requirements.txt** template for typical PyTorch projects so users can `pip install -r requirements.txt` without guesswork. That way, the README setup will be one command shorter. Would you like me to prepare that?
 
