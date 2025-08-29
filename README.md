@@ -1,5 +1,8 @@
 # DiTree
-Official implementation of the paper "Train Once Plan Anywhere Kinodynamic Motion Planning via Diffusion Trees"
+
+[project page](https://sites.google.com/view/ditree/home) [paper](https://arxiv.org/abs/2508.21001)
+
+Official implementation of the paper "Train Once Plan Anywhere Kinodynamic Motion Planning via Diffusion Trees" [CoRL 25]
 
 This repository contains the code and experiment setup for the **DiTree** project. It includes training configuration, experiment execution scripts, and pretrained model checkpoints.
 
