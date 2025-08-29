@@ -1,0 +1,4 @@
+scenario_name,maze_name,start_row,start_col,start_deg,goal_row,goal_col
+val_maze_small,val_maze_7,1,5,180,5,3
+val_maze_large,val_maze_10,1,3,180,7,1
+val_maze_xlarge,val_maze_15,1,5,270,13,4

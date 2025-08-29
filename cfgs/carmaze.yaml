@@ -1,0 +1,24 @@
+env_id: "carmaze"
+debug: false
+prediction_type: "actions"
+goal_conditioned: true
+obs_history: 1
+action_history: 1
+local_map_conditioned: true
+local_map_size: 20
+local_map_scale: 0.2
+local_map_embedding_dim: 400
+local_map_encoder: "resnet"
+unet_size: "large"
+num_epochs: 15
+augmentations: [ "mirror" ]
+policy: "flow_matching"
+num_diffusion_iters: 1
+planning_diffusion_iters: 1
+pred_horizon: 64
+action_horizon: 8
+goal_conditioning_bias: 0.85
+
+
+
+

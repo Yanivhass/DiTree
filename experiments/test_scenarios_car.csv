@@ -1,0 +1,16 @@
+scenario_name,maze_name,start_row,start_col,start_deg,goal_row,goal_col
+Race Track,Race_Track,1,1,270,1,10
+random xlarge2,random_xlarge,1,1,0,9,9
+narrow,narrow_short,1,1,0,4,9
+boxes,boxes,17,2,45,2,17
+boxes2,boxes,12,8,0,2,17
+boxes3,boxes,3,3,0,15,15
+shapes,shapes,2,2,315,19,19
+shapes2,shapes,15,10,0,10,18
+random large2,random_large,1,3,0,7,10
+random large3,random_large,1,9,180,7,4
+random xlarge easy,random_xlarge,1,1,0,3,7
+random xlarge3,random_xlarge,11,7,180,9,9
+random huge easy,random_huge,21,11,180,15,3
+random huge medium,random_huge,19,21,90,15,25
+random huge medium2,random_huge,19,9,0,13,19
