@@ -14,7 +14,6 @@ import gymnasium as gym
 import gymnasium_robotics
 gym.register_envs(gymnasium_robotics)
 
-from drone_env import DroneEnv
 from car_env import CarEnv
 
 from tqdm import tqdm
@@ -22,13 +21,10 @@ from tqdm import tqdm
 from diffusers.schedulers.scheduling_ddpm import DDPMScheduler
 
 from train_diffusion_policy import init_noise_pred_net
-# from train_dipper import init_dipper_net  # NOT IN USE
 
 from policies.fm_policy import DiffusionSampler
-from policies.uniform_policy import UniformSampler
 
 from planners.RRT import RRT_Planner
-from planners.random_tree import RandomTreePlanner
 from planners.MPC import MPC_Planner
 
 import common.map_utils

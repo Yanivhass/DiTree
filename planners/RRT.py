@@ -64,8 +64,7 @@ class RRT_Planner(BasePlanner):
             # select random int value in range
             # edge_length = random.randint(self.prop_duration_schedule[0], self.prop_duration_schedule[1])
             curr_node.num_visit += 1
-            # goal = self.goal_state[:2]
-            # goal = sample_node[0, :2]
+
             if random.random() > self.goal_conditioning_bias:  # default is 0.85
                 goal = sample_node[0, :2]
             else:
@@ -161,19 +160,14 @@ if __name__ == "__main__":
     np.random.seed(seed)
     random.seed(seed)
 
-    env_id = 'pointmaze-medium-v2'
-    checkpoint = 'pointmaze_200.pt'
+    env_id = 'antmaze-large-diverse-v1'
+    checkpoint = 'antmaze.pt'
     obs_horizon = 1
     num_diffusion_iters = 100
     if env_id == "antmaze-large-diverse-v1":
         obs_dim = 27
         action_dim = 8
-    elif env_id == "pointmaze-medium-v2":
-        obs_dim = 4
-        action_dim = 2
-    elif 'drone' in env_id:
-        obs_dim = 10
-        action_dim = 4
+
 
     dataset = minari.load_dataset(env_id, download=False)
     render_mode = 'human' if debug else 'rgb_array'
@@ -219,26 +213,3 @@ if __name__ == "__main__":
     print("Planning with Diffusion Sampler...")
     path_diffusion, actions_diffusion = diffusion_planner.plan()
 
-    # kinoRRT = RRT_planner(start, goal,
-    #                       env_id=env_id,  # 'pushT' or 'maze'
-    #                       environment=env,
-    #                       sampler=UniformSampler(env.action_space),
-    #                       time_budget=time_budget,
-    #                       max_iter=10000,
-    #                       bounds=None  # environment bounds
-    #                       )
-    # print("Planning with Kino RRT...")
-    # path_kino, actions_kino = kinoRRT.plan()
-
-    # car_params = {
-    #     'L': 2.0,  # Wheelbase
-    #     'max_speed': 1.0  # Maximum speed
-    # }
-
-    # rrt = RRT(start, goal, car_params)
-    # path = rrt.plan()
-
-    # if path is not None:
-    #     rrt.visualize(path)
-    # else:
-    #     print("Path not found.")

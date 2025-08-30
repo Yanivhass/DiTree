@@ -1,0 +1,5 @@
+scipy
+tqdm
+spatialmath-python   
+gymnasium_robotics
+casadi
