@@ -86,6 +86,21 @@ checkpoints/
 data/
 ```
 
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@inproceedings{
+hassidof2025trainonce,
+title={Train-Once Plan-Anywhere Kinodynamic Motion Planning via Diffusion Trees},
+author={Yaniv Hassidof and Tom Jurgenson and Kiril Solovey},
+booktitle={9th Annual Conference on Robot Learning},
+year={2025},
+url={https://openreview.net/forum?id=lJWUourMTT}
+}
+
+
 
 
 
