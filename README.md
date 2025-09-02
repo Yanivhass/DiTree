@@ -38,7 +38,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```
 
 4. **Install other dependencies**
-
+We provide here a minimal list of depencencies for running the car experiments. Other functionalities might require additional installation (e.g. Mujoco's Ant requiring Mujoco). 
 ```bash
 pip install -r requirements.txt
 ```
